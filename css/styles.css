@@ -1,0 +1,320 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Livvic', sans-serif;
+}
+.container {
+    width: 1170px;
+    margin: auto;
+}
+/*start slider */
+.slider {
+    width: 100%;
+    height: 600px;
+    background-image: url("..//img//slider.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; 
+    background-size: cover;
+}
+.slider .intro {
+    padding-top: 20px;
+    padding-left: 800px;
+    text-align: center;
+    font-size: 35px;
+    opacity: 1;
+}
+.slider .intro button {
+    font-size: 20px;
+    padding: 5px 20px;
+    text-decoration: none;
+    background-color: #ddf796;
+    border: #ddf796;
+    border-radius: 4px;
+}
+/*end slider*/
+/* start navbar*/
+.navbar {
+    background-color: #ddf796;
+    overflow: hidden;
+}
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar a:hover {
+    background-color: #f2a6a6;
+  }
+.navbar input[type=text] {
+    float: right;
+    padding: 6px;
+    margin-top: 5px;
+    margin-right: 16px;
+    border: 1px solid #f2a6a6;
+    font-size: 17px;
+  }
+/* start first-para */ 
+.first-para {
+    margin-top: 70px;
+    overflow: hidden;
+}
+/*start second-par */
+.second-para {
+    text-align: center;
+    background-color: #ddf796;
+    padding: 20px 0px;
+    margin-top: 70px; 
+}
+
+/*start best-hdphone*/
+.best-hdphone {
+    margin-top: 100px;
+    overflow: hidden;
+}
+.best-hdphone .hdphone-pics .pic {
+    position: relative;
+    width: 30%;
+    float: left;
+    margin: 18px;
+    
+}
+.best-hdphone .hdphone-pics .pic img {
+    width: 100%;
+   min-height: 300px;
+    z-index: -1;
+    
+}
+
+
+.best-hdphone .hdphone-pics .pic  .icon {
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    background-color: #f2a6a6;
+    padding: 0px 10px;
+    border-radius: 4px;
+} 
+.best-hdphone .hdphone-pics .pic  .pic-para {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    opacity: 0.8;
+    z-index: 1;
+}
+.best-hdphone .hdphone-pics .pic:hover .pic-para {
+    height: 35%;
+
+}
+
+.best-hdphone .hdphone-pics .pic  .pic-para .text{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 250px;
+  }
+  .best-hdphone .hdphone-pics .pic  .pic-para .text h3{
+      color: #f2a6a6;
+  }
+
+/*start products*/
+.products {
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 100px;
+    backface-visibility: hidden;
+}
+.products .hdphone-pics .pic {
+    position: relative;
+    width: 22%;
+    float: left;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    margin: 16px;
+    
+    
+}
+.products .hdphone-pics .pic img {
+   width: 100%;
+   min-height: 250px;
+   opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+}
+.products .hdphone-pics .pic .pic-para {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 250px;
+  }
+
+.products .hdphone-pics .pic:hover .pic-para {
+    opacity: 1;
+}
+.products .hdphone-pics .pic .pic-para .icon a{
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    background-color: #f2a6a6;
+    padding: 0px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+  }
+/* second paragraph*/
+.second-para .text{
+    padding-bottom: 20px;
+}
+.second-para a {
+    font-size: 25px;
+    padding: 5px 20px; 
+    background-color: #f2a6a6;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+}
+
+/*start why-to-buy*/
+.why-to-buy {
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 100px;
+
+}
+.why-to-buy .hdphone-pics .pic {
+    
+    width: 20%;
+    float: left;
+    margin-bottom: 20px;
+    border: 3px solid black;
+    border-radius: 20%;
+    margin: 30px;
+}
+.why-to-buy .hdphone-pics .icon a 
+{
+    text-align: center;
+	float: left;
+	width: 150px;
+	height: 150px;
+	border: 1px solid #909090;
+	border-radius: 100%;
+    margin: 0px 40px; /*space between*/
+    padding: 10px;
+}
+.why-to-buy .hdphone-pics .icon a:hover {
+    background-color: #f2a6a6;   
+}
+.why-to-buy .hdphone-pics .icon a:hover i{
+    color: white;
+}
+.why-to-buy .hdphone-pics .icon a i{
+	font-size: 80px;
+    line-height: 140px;
+    color: #f2a6a6;
+    margin:auto;
+}
+.why-to-buy .hdphone-pics-text .icon-text {
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+
+}
+/*contact form*/
+.contact-form {
+    overflow: hidden;
+    margin-top: 100px ;
+}
+.contact-form .pic ,
+.contact-form .form {
+    float: left;
+    width: 50%;
+}
+.contact-form .form {
+    background-color: #f2a6a6;
+    padding  :20px 0px;
+    text-align: center;
+    border:2px dashed gold;
+}
+.contact-form .form input[type=text] {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: 1px solid #f2a6a6;
+    background: #f1f1f1;
+}
+.contact-form .form .message {
+    height: 200px;
+}
+.contact-form .form .btn {
+    
+        background-color: #ddf796;
+        color: black;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+        opacity: 0.9;
+      
+}
+.contact-form .pic img {
+    width: 70%;
+    margin-left: 30px;
+}
+/*footer*/
+.footer {
+
+    margin-top: 100px;
+    height: 300px;
+    background-color: #8a8a8a;
+    box-sizing: border-box;
+    color: white;
+}
+.footer .col {
+
+    float: left;
+    width: 25%;
+    margin-top: 50px;
+}
+.footer .col i {
+    color: #f2a6a6;
+    visibility: hidden;
+}
+.footer .col a {
+    text-decoration: none;
+    margin-left: 15px;
+    color: black;
+}
+.footer .col p:hover i{
+    visibility: visible;
+}
+.footer .col p:first-of-type {
+    font-weight: bold;
+}
+
+
+
+
